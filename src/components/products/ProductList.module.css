@@ -1,0 +1,14 @@
+.prodList{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.listc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:fit-content;
+    
+}
