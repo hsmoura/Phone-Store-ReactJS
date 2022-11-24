@@ -12,13 +12,11 @@ export default function DetailPage(props) {
   const [prodDetails, setProdDetails] = useState({});
   const [fetched, setFetched] = useState(false);
   async function fetchProdDetails() {
-    console.log("FETCH");
     await fetch(`https://front-test-api.herokuapp.com/api/product/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setProdDetails(data);
         setFetched(true);
-        console.log("DATA" + data);
       })
       .catch((err) => console.error(err));
   }

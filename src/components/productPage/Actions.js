@@ -48,7 +48,6 @@ export default function Actions(props) {
     const data = await response.json();
 
     if (data["count"]) {
-      console.log(data["count"]);
       ctx.setCart((prevState) => {
         return prevState + 1;
       });

@@ -22,7 +22,6 @@ const HeaderCartButton = (props) => {
       if (localStorage.getItem("count") && localStorage.getItem("cartItems")) {
         ctx.setCart(Number(localStorage.getItem("count")));
         ctx.setSavedData(JSON.parse(localStorage.getItem("cartItems")));
-        console.log("CART ITEMS: " + localStorage.getItem("count"));
       }
     }
   }, []);

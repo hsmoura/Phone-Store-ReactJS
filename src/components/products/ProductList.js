@@ -15,7 +15,6 @@ function ProductList() {
           prod.model.toLowerCase().includes(ctx.search.toLowerCase())
       )
     );
-    console.log(ctx.displayedPhones);
   }, [ctx.search]);
 
   return (
